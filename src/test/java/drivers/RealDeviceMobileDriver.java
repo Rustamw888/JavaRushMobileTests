@@ -39,9 +39,8 @@ public class RealDeviceMobileDriver implements WebDriverProvider {
     }
 
     private File getApp() {
-        String appUrl = "https://github.com/wikimedia/apps-android-wikipedia" +
-                "/releases/download/latest/app-alpha-universal-release.apk";
-        String appPath = "src/test/resources/apps/app-alpha-universal-release.apk";
+        String appUrl = "https://github.com/bkhezry/weather/releases/download/2.2.3/Weather-release-2.2.3.apk";
+        String appPath = "src/test/resources/apps/Weather-release-2.2.3.apk";
 
         File app = new File(appPath);
         if (!app.exists()) {
