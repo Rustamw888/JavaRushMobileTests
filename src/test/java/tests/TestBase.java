@@ -18,7 +18,8 @@ import static io.qameta.allure.Allure.step;;
 
 public class TestBase {
 
-    static String host = System.getProperty("host", "androidEmulator");
+//    static String host = System.getProperty("host", "androidEmulator");
+    static String host = System.getProperty("host", "browserStack");
 
     @BeforeAll
     public static void setup() {

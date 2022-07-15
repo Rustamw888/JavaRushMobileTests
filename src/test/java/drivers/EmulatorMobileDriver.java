@@ -39,8 +39,8 @@ public class EmulatorMobileDriver implements WebDriverProvider {
     }
 
     private File getApp() {
-        String appUrl = "https://github.com/bkhezry/weather/releases/download/2.2.3/Weather-release-2.2.3.apk";
-        String appPath = "src/test/resources/apps/Weather-release-2.2.3.apk";
+        String appUrl = "https://trashbox.ru/files20/1639225_a5b1ad/com.hitechrush.jaxarush_1.0.65_100065.apk";
+        String appPath = "src/test/resources/apps/com.hitechrush.jaxarush_1.0.65_100065.apk";
 
         File app = new File(appPath);
         if (!app.exists()) {
