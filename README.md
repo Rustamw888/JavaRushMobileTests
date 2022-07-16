@@ -157,6 +157,12 @@ android
 <img title="Telegram notification message" src="images/screenshots/telegram_report.png">
 </p>
 
+Локальный запуск:
+```
+java "-DconfigFile=notifications/telegram.json" -jar allure-notifications-4.2.0.jar
+
+```
+
 ## :rocket: Видео примеры прохождения тестов
 > К каждому тесту в отчете прилагается видео. Одно из таких видео представлено ниже.
 <p align="center">
