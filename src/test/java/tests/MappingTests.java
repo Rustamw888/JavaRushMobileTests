@@ -126,9 +126,13 @@ public class MappingTests extends TestBase {
             selectors.startBtn.click();
             selectors.startQuiz.click();
         });
-        step("Selecting a language", () ->
-                selectors.russianLanguage.click()
-        );
+        step("Selecting a language", () -> {
+            selectors
+                    .russianLanguage.click();
+            selectors
+                    .russianLanguage
+                    .shouldNotBe(visible);
+        });
         step("Page element checks", () -> {
             selectors
                     .careerTitle

@@ -1,7 +1,7 @@
 # Проект по автоматизации тестирования 
-## <a target="_blank" href="https://github.com/wikimedia/apps-android-wikipedia/releases/download/latest/app-alpha-universal-release.apk">мобильного приложения Wikipedia</a>
+## <a target="_blank" href="https://trashbox.ru/files20/1639225_a5b1ad/com.hitechrush.jaxarush_1.0.65_100065.apk">мобильного приложения JavaRush</a>
 
-![This is an image](https://i.imgur.com/ZArRjuS.png)
+![This is an image](https://i.imgur.com/qonhbh0.png)
 
 ## :rocket: Содержание:
 
@@ -10,6 +10,9 @@
 - [x] <a href="#rocket-сборка-в-Jenkins">Сборка в Jenkins</a>
 - [x] <a href="#rocket-запуск-из-терминала">Запуск из терминала</a>
 - [x] <a href="#rocket-allure-отчет">Allure отчет</a>
+- [x] <a href="#rocket-интеграция-с-allure-testops">Интеграция с Allure TestOps</a>
+- [x] <a href="#rocket-интеграция-с-jira">Интеграция с Jira</a>
+- [x] <a href="#rocket-отчет-в-telegram">Отчет в Telegram</a>
 - [x] <a href="#rocket-Результаты-тестов-в-BrowserStack">Результаты тестов в BrowserStack</a>
 - [x] <a href="#rocket-видео-примеры-прохождения-тестов">Видео примеры прохождения тестов</a>
 
@@ -23,13 +26,20 @@
 <img width="6%" title="Android Studio" src="images/logo/android-studio.svg">
 <img width="6%" title="Appium" src="images/logo/appium.svg">
 <img width="6%" title="BrowserStack" src="images/logo/browserstack.svg">
+<img width="6%" title="Selenoid" src="images/logo/Selenoid.svg">
+<img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
+<img width="6%" title="GitHub" src="images/logo/GitHub.svg">
+<img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
+<img width="6%" title="Telegram" src="images/logo/Telegram.svg">
 </p>
 
 ## :rocket: Реализованные проверки
 ![This is an image](https://i.imgur.com/Dd62Cq5.png)
-- Переход на каждую из основных страниц приложения
-- Работоспособность системы поиска
-- Наличие основных элементов в результате поиска
+- Проверка информации на страницах обучения
+- Проверка элементов главной страницы
+- Проверка отображения элементов титульной страницы
+- Проверка отображения элементов страницы с выбором языка
+- Проверка отображения элементов страницы выбора профессии
 
 ## :rocket: Сборка в Jenkins
 ### <a target="_blank" href="https://jenkins.autotests.cloud/job/Lesson_20_mobile_tests_part2/">Сборка в Jenkins</a>
@@ -46,13 +56,13 @@
 ## :rocket: Запуск из терминала
 Локальный запуск:
 ```
-gradle clean screen -Dhost=(browserStack/realDevice/androidEmulator)
+gradle clean android -Dhost=(browserStack/realDevice/androidEmulator)
 ```
 
 Удаленный запуск:
 ```
 clean
-screen
+android
 "-Dhost=${HOST}"
 ```
 
