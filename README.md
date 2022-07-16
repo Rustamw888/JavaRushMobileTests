@@ -78,33 +78,34 @@ android
 </p>
 
 ## :rocket: Результаты тестов в BrowserStack
-- ### Экран с результатами запуска тестов
+- ### Как можно загрузить свое приложение
 <p align="center">
-<img title="TestOps Launch Page" src="images/screenshots/browserstack_launch_page.png">
+<img title="TestOps Launch Page" src="images/screenshots/upload_file_BS.png">
+</p>
+
+- ### Как можно увидеть процесс запуска тестов
+<p align="center">
+<img title="TestOps Launch Page" src="images/screenshots/your_test_run_BS.png">
+</p>
+
+- ### Экран с параметрами необходимых для запуска тестов
+<p align="center">
+<img title="TestOps Launch Page" src="images/screenshots/input_capabilities_BS.png">
 </p>
 
 - ### Вкладка с текстовыми логами в BrowserStack
 <p align="center">
-<img title="TestOps tests page" src="images/screenshots/browserstack_text_logs_1.png">
-<img title="TestOps tests page" src="images/screenshots/browserstack_text_logs_2.png">
-<img title="TestOps tests page" src="images/screenshots/browserstack_text_logs_3.png">
+<img title="TestOps tests page" src="images/screenshots/text_logs_BS.png">
 </p>
 
 - ### Вкладка с логами устройства в BrowserStack
 <p align="center">
-<img title="TestOps tests page" src="images/screenshots/browserstack_device_logs.png">
+<img title="TestOps tests page" src="images/screenshots/device_capabilities_other_logs_BS.png">
 </p>
-# curl -u login:password https://api.browserstack.com/app-automate/builds/094671bce1f45532bd0227b1bc3530a36c7797a6/sessions/ad43656ff296ce33beb4390ccd2b29eb74c03976/devicelogs
-
-- ### Вкладка с логами appium в BrowserStack
-<p align="center">
-<img title="TestOps tests page" src="images/screenshots/browserstack_appium_logs.png">
-</p>
-# curl -u login:password https://api.browserstack.com/app-automate/builds/094671bce1f45532bd0227b1bc3530a36c7797a6/sessions/ad43656ff296ce33beb4390ccd2b29eb74c03976/appiumlogs
 
 - ### Вкладка состояния устройства в BrowserStack
 <p align="center">
-<img title="TestOps tests page" src="images/screenshots/app_profiling.png">
+<img title="TestOps tests page" src="images/screenshots/app_profiling_BS.png">
 </p>
 
 ## :rocket: Интеграция с Allure TestOps
