@@ -1,0 +1,17 @@
+{
+  "base": {
+    "project": "JavaRushMobileTests",
+    "environment": "Browserstack",
+    "comment": "The result of my work on the project",
+    "reportLink": "",
+    "language": "en",
+    "messenger": "telegram",
+    "allureFolder": "build/allure-report/",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "5337451669:AAHNLA75Wb2AgFbqjvqlLEIKRWRuoZIdGe4",
+    "chat": "952993463",
+    "replyTo": ""
+  }
+}
