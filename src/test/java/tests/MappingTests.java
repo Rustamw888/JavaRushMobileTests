@@ -4,6 +4,7 @@ import enums.Professions;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 import tests.selectors.Selectors;
 
@@ -12,12 +13,14 @@ import static com.codeborne.selenide.Condition.visible;
 import static io.qameta.allure.Allure.step;
 
 @Tag("android")
+@DisplayName("Android test")
 public class MappingTests extends TestBase {
 
     Selectors selectors = new Selectors();
 
     @Test
     @DisplayName("Checking the training information")
+    @Tags ({@Tag("blocker"), @Tag("mobile")})
     void checkingTheTrainingInformation() {
 
         step("First page checking", () -> {
@@ -65,6 +68,7 @@ public class MappingTests extends TestBase {
 
     @Test
     @DisplayName("Checking the main page elements")
+    @Tags ({@Tag("blocker"), @Tag("mobile")})
     void mainPageElementsTest() {
         step("Checking elements visibility", () -> {
             selectors
@@ -79,6 +83,7 @@ public class MappingTests extends TestBase {
 
     @Test
     @DisplayName("Checking for the display of cover page elements")
+    @Tags ({@Tag("blocker"), @Tag("mobile")})
     void theCoverPageOfAnApplicationTest() {
         step("Get start", () -> {
             selectors
@@ -103,6 +108,7 @@ public class MappingTests extends TestBase {
 
     @Test
     @DisplayName("Checking for the display of page elements with language selection")
+    @Tags ({@Tag("blocker"), @Tag("mobile")})
     void languageSelectionPageTest() {
         step("Go to relevant page", () -> {
             selectors.startBtn.click();
@@ -121,6 +127,7 @@ public class MappingTests extends TestBase {
 
     @Test
     @DisplayName("Checking for display elements of the profession selection page")
+    @Tags ({@Tag("blocker"), @Tag("mobile")})
     void languageChooseTest() {
         step("Go to relevant page", () -> {
             selectors.startBtn.click();
