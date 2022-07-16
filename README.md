@@ -107,6 +107,43 @@ android
 <img title="TestOps tests page" src="images/screenshots/app_profiling.png">
 </p>
 
+## :rocket: Интеграция с Allure TestOps
+- ### Экран с результатами запуска тестов
+<p align="center">
+<img title="TestOps Launch Page" src="images/screenshots/test_results_ATO.png">
+</p>
+
+- ### Экран с launches после интеграции с IDE + график
+<p align="center">
+<img title="TestOps Launch Page" src="images/screenshots/launches_ATO.png">
+</p>
+
+- ### Экран с дашбордами и тестами в TestOps auto + manual
+<p align="center">
+<img title="TestOps Launch Page" src="images/screenshots/dashboards_ATO.png">
+</p>
+
+- ### Страница с тест кейсами в TestOps
+<p align="center">
+<img title="TestOps tests page" src="images/screenshots/test_cases_ATO.png">
+</p>
+
+- ### Страница с тест ранами в TestOps auto + manual
+<p align="center">
+<img title="TestOps tests page" src="images/screenshots/test_runs_ATO.png">
+</p>
+
+## :rocket: Интеграция с Jira
+- ### Страница с задачей в Jira
+<p align="center">
+<img title="Jira issue" src="images/screenshots/jira_task.png">
+</p>
+
+## :rocket: Отчет в Telegram
+<p align="center">
+<img title="Telegram notification message" src="images/screenshots/telegram_report.png">
+</p>
+
 ## :rocket: Видео примеры прохождения тестов
 > К каждому тесту в отчете прилагается видео. Одно из таких видео представлено ниже.
 <p align="center">
