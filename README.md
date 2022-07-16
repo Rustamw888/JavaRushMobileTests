@@ -72,9 +72,21 @@ android
 <img title="Allure Overview Dashboard" src="images/screenshots/report_main_page.png">
 </p>
 
-- ### Страница с проведенными тестами
+- ### Страница с проведенными тестами (suites)
 <p align="center">
-<img title="Allure Test Page" src="images/screenshots/report_tests_page.png">
+<img title="Allure Test Page" src="images/screenshots/allure_suites_1.png">
+<img title="Allure Test Page" src="images/screenshots/allure_suites_2.png">
+<img title="Allure Test Page" src="images/screenshots/allure_suites_3.png">
+</p>
+
+- ### Страница с пакетами тестов
+<p align="center">
+<img title="Allure Overview Dashboard" src="images/screenshots/allure_packages.png">
+</p>
+
+- ### Страница с графиком прохождения тестов
+<p align="center">
+<img title="Allure Overview Dashboard" src="images/screenshots/allure_schedule.png">
 </p>
 
 ## :rocket: Результаты тестов в BrowserStack
