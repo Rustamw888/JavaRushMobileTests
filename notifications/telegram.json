@@ -1,12 +1,12 @@
 {
   "base": {
-    "project": "JavaRushMobileTests",
+    "project": "${JOB_BASE_NAME}",
     "environment": "Browserstack",
     "comment": "The result of my work on the project",
-    "reportLink": "",
+    "reportLink": "${BUILD_URL}",
     "language": "en",
     "messenger": "telegram",
-    "allureFolder": "build/allure-report/",
+    "allureFolder": "allure-report/",
     "enableChart": true
   },
   "telegram": {

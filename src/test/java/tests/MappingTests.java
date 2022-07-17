@@ -1,6 +1,7 @@
 package tests;
 
 import enums.Professions;
+import io.qameta.allure.AllureId;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -19,6 +20,7 @@ public class MappingTests extends TestBase {
     Selectors selectors = new Selectors();
 
     @Test
+    @AllureId("11264")
     @DisplayName("Checking the training information")
     @Tags ({@Tag("blocker"), @Tag("mobile")})
     void checkingTheTrainingInformation() {
@@ -67,6 +69,7 @@ public class MappingTests extends TestBase {
     }
 
     @Test
+    @AllureId("11268")
     @DisplayName("Checking the main page elements")
     @Tags ({@Tag("blocker"), @Tag("mobile")})
     void mainPageElementsTest() {
@@ -82,6 +85,7 @@ public class MappingTests extends TestBase {
     }
 
     @Test
+    @AllureId("11267")
     @DisplayName("Checking for the display of cover page elements")
     @Tags ({@Tag("blocker"), @Tag("mobile")})
     void theCoverPageOfAnApplicationTest() {
@@ -107,6 +111,7 @@ public class MappingTests extends TestBase {
     }
 
     @Test
+    @AllureId("11265")
     @DisplayName("Checking for the display of page elements with language selection")
     @Tags ({@Tag("blocker"), @Tag("mobile")})
     void languageSelectionPageTest() {
@@ -126,6 +131,7 @@ public class MappingTests extends TestBase {
     }
 
     @Test
+    @AllureId("11266")
     @DisplayName("Checking for display elements of the profession selection page")
     @Tags ({@Tag("blocker"), @Tag("mobile")})
     void languageChooseTest() {
