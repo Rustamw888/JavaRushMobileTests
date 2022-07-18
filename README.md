@@ -30,6 +30,10 @@
 <img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
 <img width="6%" title="GitHub" src="images/logo/GitHub.svg">
 <img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
+<img width="6%" title="AllureTestOps" src="images/logo/AllureTestOps.svg">
+<img width="6%" title="Git" src="images/logo/Git.svg">
+<img width="6%" title="RestAssured" src="images/logo/RestAssured.svg">
+<img width="6%" title="Jira" src="images/logo/Jira.svg">
 <img width="6%" title="Telegram" src="images/logo/Telegram.svg">
 </p>
 
