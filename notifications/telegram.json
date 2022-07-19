@@ -1,7 +1,7 @@
 {
   "base": {
     "project": "${JOB_BASE_NAME}",
-    "environment": "Browserstack",
+    "environment": "some env",
     "comment": "The result of my work on the project",
     "reportLink": "${BUILD_URL}",
     "language": "en",
@@ -11,7 +11,7 @@
   },
   "telegram": {
     "token": "5337451669:AAHNLA75Wb2AgFbqjvqlLEIKRWRuoZIdGe4",
-    "chat": "952993463",
+    "chat": "-1001713084594",
     "replyTo": ""
   }
 }
