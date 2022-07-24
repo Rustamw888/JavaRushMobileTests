@@ -4,7 +4,7 @@ import org.aeonbits.owner.Config;
 
 @Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources("classpath:config/realDevice.properties")
-public interface RealDevice extends Config {
+public interface AndroidRealDevice extends Config {
 
     String baseURL();
 

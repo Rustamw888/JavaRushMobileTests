@@ -20,6 +20,8 @@ import static org.apache.commons.io.FileUtils.copyInputStreamToFile;
 public class EmulatorMobileDriver implements WebDriverProvider {
 
     static AndroidEmulator config = ConfigFactory.create(AndroidEmulator.class);
+    public static final String appUrl = "https://trashbox.ru/files20/1639225_a5b1ad/com.hitechrush.jaxarush_1.0.65_100065.apk";
+    public static final String appPath = "src/test/resources/apps/com.hitechrush.jaxarush_1.0.65_100065.apk";
 
     @Override
     public WebDriver createDriver(Capabilities capabilities) {
@@ -32,16 +34,11 @@ public class EmulatorMobileDriver implements WebDriverProvider {
         options.setDeviceName(config.deviceName());
         options.setPlatformVersion(config.platformVersion());
         options.setApp(app.getAbsolutePath());
-//        options.setAppPackage("org.wikipedia.alpha");
-//        options.setAppActivity("org.wikipedia.main.MainActivity");
 
         return new AndroidDriver(getAppiumServerUrl(), options);
     }
 
     private File getApp() {
-        String appUrl = "https://trashbox.ru/files20/1639225_a5b1ad/com.hitechrush.jaxarush_1.0.65_100065.apk";
-        String appPath = "src/test/resources/apps/com.hitechrush.jaxarush_1.0.65_100065.apk";
-
         File app = new File(appPath);
         if (!app.exists()) {
             try (InputStream in = new URL(appUrl).openStream()) {

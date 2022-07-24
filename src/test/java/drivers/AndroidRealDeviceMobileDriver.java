@@ -1,7 +1,7 @@
 package drivers;
 
 import com.codeborne.selenide.WebDriverProvider;
-import config.RealDevice;
+import config.AndroidRealDevice;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.remote.AutomationName;
@@ -17,9 +17,9 @@ import java.net.URL;
 
 import static org.apache.commons.io.FileUtils.copyInputStreamToFile;
 
-public class RealDeviceMobileDriver implements WebDriverProvider {
+public class AndroidRealDeviceMobileDriver implements WebDriverProvider {
 
-    static RealDevice configMD = ConfigFactory.create(RealDevice.class);
+    static AndroidRealDevice configMD = ConfigFactory.create(AndroidRealDevice.class);
 
     @Override
     public WebDriver createDriver(Capabilities capabilities) {

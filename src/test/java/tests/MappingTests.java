@@ -7,7 +7,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
-import tests.selectors.Selectors;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
@@ -17,52 +16,50 @@ import static io.qameta.allure.Allure.step;
 @DisplayName("Android test")
 public class MappingTests extends TestBase {
 
-    Selectors selectors = new Selectors();
-
     @Test
     @AllureId("11264")
     @DisplayName("Checking the training information")
-    @Tags ({@Tag("blocker"), @Tag("mobile")})
+    @Tags({@Tag("blocker"), @Tag("mobile")})
     void checkingTheTrainingInformation() {
 
         step("First page checking", () -> {
-            selectors
+            start
                     .startedTextViewHeader
                     .shouldHave(text("Learn Java on the go"));
-            selectors
+            start
                     .startedTextView
                     .shouldHave(text("Access the course anywhere"));
-            selectors.secondPagePoint.click();
+            start.secondPagePoint.click();
         });
         step("Second page checking", () -> {
-            selectors
+            start
                     .startedTextViewHeader
                     .shouldHave(text("Program every day"));
-            selectors
+            start
                     .startedTextView
                     .shouldHave(text("1200+ tasks on your smartphone"));
-            selectors.thirdPagePoint.click();
+            start.thirdPagePoint.click();
         });
         step("Third page checking", () -> {
-            selectors
+            start
                     .startedTextViewHeader
                     .shouldHave(text("Study substantive Java lessons"));
-            selectors
+            start
                     .startedTextView
                     .shouldHave(text("Master new knowledge at your convenience"));
-            selectors.forthPagePoint.click();
+            start.forthPagePoint.click();
         });
         step("Fourth page checking", () -> {
-            selectors
+            start
                     .startedTextViewHeader
                     .shouldHave(text("Grow closer to the Java community"));
-            selectors
+            start
                     .startedTextView
                     .shouldHave(text("Help from students and developers"));
-            selectors.firstPagePoint.click();
+            start.firstPagePoint.click();
         });
         step("Get start", () -> {
-            selectors
+            start
                     .startBtn
                     .shouldHave(text("Start")).click();
         });
@@ -71,40 +68,40 @@ public class MappingTests extends TestBase {
     @Test
     @AllureId("11268")
     @DisplayName("Checking the main page elements")
-    @Tags ({@Tag("blocker"), @Tag("mobile")})
+    @Tags({@Tag("blocker"), @Tag("mobile")})
     void mainPageElementsTest() {
         step("Checking elements visibility", () -> {
-            selectors
+            main
                     .enterTextViewTitle
                     .shouldHave(text("Already have an account? "));
-            selectors
+            main
                     .enterTextViewLink
                     .shouldHave(text("Sign in"));
-            selectors.rootLayout.shouldBe(visible);
+            main.rootLayout.shouldBe(visible);
         });
     }
 
     @Test
     @AllureId("11267")
     @DisplayName("Checking for the display of cover page elements")
-    @Tags ({@Tag("blocker"), @Tag("mobile")})
+    @Tags({@Tag("blocker"), @Tag("mobile")})
     void theCoverPageOfAnApplicationTest() {
         step("Get start", () -> {
-            selectors
+            start
                     .startBtn
                     .shouldHave(text("Start")).click();
         });
         step("Checking the cover page of an application", () -> {
-            selectors.imageView.shouldBe(visible);
-            selectors
+            cover.imageView.shouldBe(visible);
+            cover
                     .firstOrderTextView
                     .shouldHave(text("Welcome to JavaRush!"));
-            selectors
+            cover
                     .secondOrderTextView
                     .shouldHave(text(
                             "Answer a few questions and we will prepare a " +
-                            "personalized learning program for you. Let's begin?"));
-            selectors
+                                    "personalized learning program for you. Let's begin?"));
+            cover
                     .startQuiz
                     .shouldHave(text("Start"));
         });
@@ -113,19 +110,19 @@ public class MappingTests extends TestBase {
     @Test
     @AllureId("11265")
     @DisplayName("Checking for the display of page elements with language selection")
-    @Tags ({@Tag("blocker"), @Tag("mobile")})
+    @Tags({@Tag("blocker"), @Tag("mobile")})
     void languageSelectionPageTest() {
         step("Go to relevant page", () -> {
-            selectors.startBtn.click();
-            selectors.startQuiz.click();
+            start.startBtn.click();
+            cover.startQuiz.click();
         });
         step("Checking the cover page of an application", () -> {
-            selectors
+            language
                     .languageTitle
                     .shouldHave(text("Choose your language"));
         });
         step("Checking the cover page of an application", () -> {
-            int size = selectors.cardView.size();
+            int size = language.cardView.size();
             Assertions.assertEquals(size, 3);
         });
     }
@@ -133,33 +130,33 @@ public class MappingTests extends TestBase {
     @Test
     @AllureId("11266")
     @DisplayName("Checking for display elements of the profession selection page")
-    @Tags ({@Tag("blocker"), @Tag("mobile")})
+    @Tags({@Tag("blocker"), @Tag("mobile")})
     void languageChooseTest() {
         step("Go to relevant page", () -> {
-            selectors.startBtn.click();
-            selectors.startQuiz.click();
+            start.startBtn.click();
+            cover.startQuiz.click();
         });
         step("Selecting a language", () -> {
-            selectors
+            languageChoose
                     .russianLanguage.click();
-            selectors
+            languageChoose
                     .russianLanguage
                     .shouldNotBe(visible);
         });
         step("Page element checks", () -> {
-            selectors
+            languageChoose
                     .careerTitle
                     .shouldHave(text("В будущем я хочу стать"));
-            selectors
+            languageChoose
                     .decideLater
                     .shouldHave(text("Решу позже"));
-            selectors
+            languageChoose
                     .javaDeveloper
                     .shouldHave(text(Professions.JAVA_DEVELOPER.getProfession()));
-            selectors
+            languageChoose
                     .androidDeveloper
                     .shouldHave(text(Professions.ANDROID_DEVELOPER.getProfession()));
-            selectors
+            languageChoose
                     .qaEngineer
                     .shouldHave(text(Professions.QA_ENGINEER.getProfession()));
         });
